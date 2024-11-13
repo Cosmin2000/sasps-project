@@ -2,11 +2,6 @@
 
 Acest proiect este conceput pentru a analiza si compara performanta arhitecturilor monolitice si microservicii. Scopul principal este de a evalua impactul fiecarei arhitecturi asupra timpilor de raspuns, consumului de resurse si scalabilitatii aplicatiei, oferind o intelegere detaliata a avantajelor si dezavantajelor fiecarei abordari in contextul dezvoltarii software moderne.
 
-# Echipa
-  @Cosmin GRIGORE SRIC-2
-  @Cristian-Ștefan BODOCAN SAS-2
-  @Valentin RADU SRIC-2
-
 ## Structura Proiectului
 
 ### Arhitectura Monolitica
@@ -48,3 +43,8 @@ Proiectul se concentreaza pe o analiza comparativa a performantei celor doua arh
 ## Concluzii
 
 Rezultatele proiectului vor oferi o intelegere clara a compromisurilor dintre arhitectura monolitica si microservicii, subliniind situatiile in care fiecare arhitectura exceleaza sau intampina dificultati. Concluziile vor fi valoroase pentru decidentii tehnici care trebuie sa aleaga arhitectura potrivita pentru aplicatiile lor, in functie de cerintele de performanta, scalabilitate si complexitate.
+
+## Echipa
+- [Cosmin GRIGORE]
+- [Cristian-Ștefan BODOCAN]
+- [Valentin RADU]
