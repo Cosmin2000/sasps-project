@@ -45,6 +45,6 @@ Proiectul se concentreaza pe o analiza comparativa a performantei celor doua arh
 Rezultatele proiectului vor oferi o intelegere clara a compromisurilor dintre arhitectura monolitica si microservicii, subliniind situatiile in care fiecare arhitectura exceleaza sau intampina dificultati. Concluziile vor fi valoroase pentru decidentii tehnici care trebuie sa aleaga arhitectura potrivita pentru aplicatiile lor, in functie de cerintele de performanta, scalabilitate si complexitate.
 
 ## Echipa
-- [Cosmin GRIGORE]
-- [Cristian-Ștefan BODOCAN]
-- [Valentin RADU]
+- Cosmin GRIGORE SRIC-2
+- Cristian-Ștefan BODOCAN SAS-2
+- Valentin RADU SRIC-2
