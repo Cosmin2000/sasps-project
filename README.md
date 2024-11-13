@@ -1,4 +1,4 @@
-# Arhitecturilor Monolitica vs. Microservicii
+# Arhitectura Monolitica vs. Microservicii
 
 Acest proiect este conceput pentru a analiza si compara performanta arhitecturilor monolitice si microservicii. Scopul principal este de a evalua impactul fiecarei arhitecturi asupra timpilor de raspuns, consumului de resurse si scalabilitatii aplicatiei, oferind o intelegere detaliata a avantajelor si dezavantajelor fiecarei abordari in contextul dezvoltarii software moderne.
 
@@ -8,7 +8,7 @@ Acest proiect este conceput pentru a analiza si compara performanta arhitecturil
 - Un singur server Java gestioneaza intregul flux de lucru al aplicatiei, incluzand gestionarea bazei de date, logica de business si interfata API.
 - Toate componentele sunt integrate intr-un singur proces, facilitand dezvoltarea si implementarea initiala, dar potential limitand scalabilitatea si flexibilitatea.
 
-### Arhitectura Microservicii
+### Microservicii
 - Aplicatia este divizata in microservicii autonome, fiecare responsabil pentru o functionalitate specifica si operand independent.
 - Fiecare microserviciu ruleaza intr-un container Docker separat, comunicand prin protocoale HTTP/REST sau gRPC. Aceasta abordare permite scalarea independenta si dezvoltarea modulara.
 
