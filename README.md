@@ -4,13 +4,25 @@ Acest proiect este conceput pentru a analiza si compara performanta arhitecturil
 
 ## Structura Proiectului
 
+### Descriere
+- Aceasta este o aplicație de e-commerce care permite utilizatorilor să exploreze și să cumpere produse online. Proiectul include funcționalități de bază pentru administrarea produselor și plasarea comenzilor.
+
+### Functionalitati
+- Autentificare cu email și parolă.
+- Gestionarea sesiunilor utilizatorilor autentificaTi.
+- AdAugarea de produse noi în catalog.
+- Modificarea detaliilor produselor existente.
+- Stergerea produselor din catalog.
+- Selectarea produselor si adaugarea acestora în coșul de cumparaturi.
+- Confirmarea si plasarea unei comenzi.
+
 ### Arhitectura Monolitica
-- Un singur server Java gestioneaza intregul flux de lucru al aplicatiei, incluzand gestionarea bazei de date, logica de business si interfata API.
+- Un singur server gestioneaza intregul flux de lucru al aplicatiei, incluzand gestionarea bazei de date, logica de business si interfata API.
 - Toate componentele sunt integrate intr-un singur proces, facilitand dezvoltarea si implementarea initiala, dar potential limitand scalabilitatea si flexibilitatea.
 
 ### Microservicii
 - Aplicatia este divizata in microservicii autonome, fiecare responsabil pentru o functionalitate specifica si operand independent.
-- Fiecare microserviciu ruleaza intr-un container Docker separat, comunicand prin protocoale HTTP/REST sau gRPC. Aceasta abordare permite scalarea independenta si dezvoltarea modulara.
+- Fiecare microserviciu ruleaza intr-un container Docker separat, comunicand prin protocoale HTTP/REST. Aceasta abordare permite scalarea independenta si dezvoltarea modulara.
 
 ## Abordarea Analitica
 
@@ -25,12 +37,12 @@ Proiectul se concentreaza pe o analiza comparativa a performantei celor doua arh
 5. **Rata de Erori:** Procentul de solicitari care esueaza in comparatie cu totalul solicitarilor.
 6. **Costul Resurselor:** Costurile asociate cu infrastructura necesara pentru a rula aplicatia.
 
-## Instrumente si Tehnologii
+## Stack Technologic
 
-- **Backend:** Java Spring Framework
+- **Backend:** NodeJs
+- **Frontend:** React
 - **Containerizare:** Docker (pentru arhitectura microservicii)
-- **Baza de Date:** Oracle Database
-- **Testare Performanta:** Apache JMeter pentru simularea incarcarii si masurarea metricilor de performanta
+- **Baza de Date:** SQLite
 - **Monitorizare:** Prometheus si Grafana pentru colectarea si vizualizarea metricilor in timp real
 
 ## Obiectivele Proiectului
