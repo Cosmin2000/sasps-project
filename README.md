@@ -5,12 +5,12 @@ Acest proiect este conceput pentru a analiza si compara performanta arhitecturil
 ## Structura Proiectului
 
 ### Descriere
-- Aceasta este o aplicație de e-commerce care permite utilizatorilor să exploreze și să cumpere produse online. Proiectul include funcționalități de bază pentru administrarea produselor și plasarea comenzilor.
+Aceasta este o aplicație de e-commerce care permite utilizatorilor să exploreze și să cumpere produse online. Proiectul include funcționalități de bază pentru administrarea produselor și plasarea comenzilor.
 
 ### Functionalitati
-- Autentificare cu email și parolă.
+- Autentificare cu email și parola.
 - Gestionarea sesiunilor utilizatorilor autentificaTi.
-- AdAugarea de produse noi în catalog.
+- Adaugarea de produse noi în catalog.
 - Modificarea detaliilor produselor existente.
 - Stergerea produselor din catalog.
 - Selectarea produselor si adaugarea acestora în coșul de cumparaturi.
