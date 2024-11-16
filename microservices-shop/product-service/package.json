@@ -1,0 +1,14 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "Product service for the online shop",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.31.0",
+    "sqlite3": "^5.1.6"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
