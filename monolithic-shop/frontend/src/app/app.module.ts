@@ -9,6 +9,8 @@ import { UserRegisterComponent } from './components/user/user-register/user-regi
 import { UserListComponent } from './components/user/user-list/user-list.component';
 import { ProductListComponent } from './components/product/product-list/product-list.component';
 import { OrderCreateComponent } from './components/order/order-create/order-create.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { OrderCreateComponent } from './components/order/order-create/order-crea
     UserRegisterComponent,
     UserListComponent,
     ProductListComponent,
-    OrderCreateComponent
+    OrderCreateComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
