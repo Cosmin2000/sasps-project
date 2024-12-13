@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('./index');
+const bcrypt = require('bcryptjs');
+const sequelize = require('../db');
 
 const Order = sequelize.define('Order', {
     userId: {
