@@ -1,1 +1,49 @@
-<p>product-add works!</p>
+<div class="container">
+    <h2>Add Product</h2>
+    <form (ngSubmit)="addProduct()">
+      <div class="form-group">
+        <label for="name">Product Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          [(ngModel)]="product.name"
+          name="name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          class="form-control"
+          [(ngModel)]="product.description"
+          name="description"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input
+          type="number"
+          id="price"
+          class="form-control"
+          [(ngModel)]="product.price"
+          name="price"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock</label>
+        <input
+          type="number"
+          id="stock"
+          class="form-control"
+          [(ngModel)]="product.stock"
+          name="stock"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </div>
+  

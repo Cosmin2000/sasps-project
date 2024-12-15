@@ -1,0 +1,22 @@
+<div class="dashboard">
+    <h2>Dashboard</h2>
+    <div class="filters">
+      <input type="text" placeholder="Filter by name" [(ngModel)]="filters.name" (input)="applyFilters()" />
+      <input type="number" placeholder="Min price" [(ngModel)]="filters.minPrice" (input)="applyFilters()" />
+      <input type="number" placeholder="Max price" [(ngModel)]="filters.maxPrice" (input)="applyFilters()" />
+      <select [(ngModel)]="filters.sort" (change)="applyFilters()">
+        <option value="asc">Sort by price: Low to High</option>
+        <option value="desc">Sort by price: High to Low</option>
+      </select>
+    </div>
+    <div class="product-list">
+      <div *ngFor="let product of filteredProducts" class="product-item">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Price: {{ product.price | currency }}</p>
+        <p>Stock: {{ product.stock }}</p>
+        <button (click)="addToCart(product)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  

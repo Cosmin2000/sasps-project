@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const sequelize = require('./db');
 const authRoutes = require('./routes/authRoutes');
+const productRoutes = require('./routes/productRoutes');
 
 dotenv.config();
 const app = express();
@@ -20,6 +21,10 @@ sequelize
 
 // Rute
 app.use('/auth', authRoutes);
+
+// Adaugă rutele produselor
+app.use('/products', productRoutes);
+
 
 // Pornirea serverului
 const PORT = process.env.PORT || 5000;
