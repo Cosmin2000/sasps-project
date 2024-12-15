@@ -1,0 +1,16 @@
+{
+  "name": "auth-service",
+  "version": "1.0.1",
+  "description": "Product service for the online shop",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.31.0",
+    "sqlite3": "^5.1.6",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
