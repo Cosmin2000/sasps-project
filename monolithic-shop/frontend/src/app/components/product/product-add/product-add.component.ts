@@ -22,7 +22,7 @@ export class ProductAddComponent {
     this.productService.addProduct(this.product).subscribe({
       next: (response) => {
         alert('Product added successfully!');
-        this.router.navigate(['/products']);
+        this.router.navigate(['/dashboard']);
       },
       error: (err) => {
         console.error(err);

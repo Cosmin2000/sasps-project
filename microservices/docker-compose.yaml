@@ -1,29 +1,71 @@
 version: '3.8'
 services:
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - monitoring
+      
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - monitoring
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - monitoring
+
   auth-service:
     build: ./auth-service
     container_name: auth-service
     ports:
       - '4001:4001'
+    networks:
+      - monitoring
 
   product-service:
     build: ./product-service
     container_name: product-service
     ports:
       - '4002:4002'
+    networks:
+      - monitoring
 
   cart-service:
     build: ./cart-service
     container_name: cart-service
     ports:
       - '4003:4003'
+    networks:
+      - monitoring
 
   api-gateway:
     build: ./api-gateway
     container_name: api-gateway
     ports:
       - '4000:4000'
+    networks:
+      - monitoring
     depends_on:
       - auth-service
       - product-service
       - cart-service
+
+
+networks:
+  monitoring:
+    driver: bridge
